@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V体育 · 信息索引</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #fafafa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+      color: #1e1e1e;
+      line-height: 1.7;
+      padding: 2.5rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .page {
+      max-width: 720px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 450;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.3rem;
+      color: #121212;
+      border-bottom: 1px solid #d4d4d4;
+      padding-bottom: 0.6rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 450;
+      margin: 2.2rem 0 0.6rem 0;
+      color: #2a2a2a;
+      letter-spacing: 0.02em;
+      border-left: 3px solid #b0b0b0;
+      padding-left: 0.7rem;
+    }
+    h3 {
+      font-size: 1rem;
+      font-weight: 470;
+      margin: 1.4rem 0 0.3rem 0;
+      color: #333;
+    }
+    p {
+      margin: 0.8rem 0;
+      font-size: 0.95rem;
+      color: #2e2e2e;
+    }
+    .hero-text {
+      font-size: 1.05rem;
+      margin: 1.2rem 0 0.2rem 0;
+      color: #1c1c1c;
+    }
+    a {
+      color: #1f4d8a;
+      text-decoration: none;
+      border-bottom: 1px dotted #9bb7d4;
+      transition: border-bottom 0.2s, color 0.15s;
+    }
+    a:hover {
+      color: #0b2d55;
+      border-bottom: 1px solid #0b2d55;
+    }
+    .grid-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.6rem 0 0.8rem 0;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e3e3e3;
+      border-radius: 12px;
+      padding: 1rem 1.1rem;
+      transition: box-shadow 0.2s, transform 0.1s;
+    }
+    .card:hover {
+      box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+      transform: translateY(-1px);
+    }
+    .card-title {
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+      color: #1a1a1a;
+    }
+    .card-desc {
+      font-size: 0.86rem;
+      color: #4a4a4a;
+      line-height: 1.5;
+    }
+    .info-block {
+      background: #f5f5f5;
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      margin: 1.6rem 0;
+      border-left: 4px solid #b8b8b8;
+    }
+    .info-block p {
+      font-size: 0.92rem;
+      color: #2c2c2c;
+      margin: 0.3rem 0;
+    }
+    .faq-item {
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed #dadada;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-weight: 480;
+      font-size: 0.93rem;
+      color: #222;
+      margin-bottom: 0.15rem;
+    }
+    .faq-a {
+      font-size: 0.88rem;
+      color: #4a4a4a;
+      padding-left: 0.3rem;
+    }
+    .note {
+      font-size: 0.85rem;
+      color: #6b6b6b;
+      margin-top: 2.5rem;
+      border-top: 1px solid #dddddd;
+      padding-top: 1.2rem;
+    }
+    @media (max-width: 540px) {
+      body {
+        padding: 1.4rem 1rem;
+      }
+      .grid-cards {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <h1>V体育 · 知识库入口</h1>
+  <p class="hero-text">这是围绕 <a href="https://cnsite--vsports.com">V体育</a> 建立的一个轻量信息索引页。日常查询、对照参考或延伸阅读，都可以从这里开始。以下内容基于公开信息整理，不构成任何建议。</p>
+
+  <h2>· 几个常用查询方向</h2>
+  <div class="grid-cards">
+    <div class="card">
+      <div class="card-title">赛事与赛果</div>
+      <div class="card-desc">主流联赛、杯赛的即时比分、赛程变动以及历史交锋记录。可按赛季或队伍筛选。</div>
+    </div>
+    <div class="card">
+      <div class="card-title">队伍与球员档案</div>
+      <div class="card-desc">阵容名单、球员数据、转会动态以及伤停信息。适合赛前对照和深度分析。</div>
+    </div>
+    <div class="card">
+      <div class="card-title">积分与排名</div>
+      <div class="card-desc">联赛积分表、晋级区、保级区走势，以及各项赛事种子队分布。</div>
+    </div>
+    <div class="card">
+      <div class="card-title">规则与术语</div>
+      <div class="card-desc">竞赛规程、常见判罚解释、数据指标定义，方便新读者快速理解专业内容。</div>
+    </div>
+  </div>
+
+  <h2>· 使用提示</h2>
+  <div class="info-block">
+    <p>🔹 数据更新频率因赛事而异，建议以 <a href="https://cnsite--vsports.com">V体育</a> 页面标注时间为准。</p>
+    <p>🔹 部分深度统计可能需要多级菜单查找，可先利用站内搜索或分类标签定位。</p>
+    <p>🔹 若遇到显示异常，尝试刷新或清除缓存，多数情况可恢复。</p>
+  </div>
+
+  <h2>· 延伸阅读 · FAQ 摘要</h2>
+  <div class="faq-item">
+    <div class="faq-q">Q: 如何快速找到某支球队近五场战绩？</div>
+    <div class="faq-a">进入队伍详情页，通常在「近期表现」或「赛程」板块下可查看，部分页面支持图表对比。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: 数据来源是否可靠？</div>
+    <div class="faq-a">平台整合自多家数据供应商，并经过交叉校验，日常使用中可作为参考依据之一。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q: 移动端浏览体验如何？</div>
+    <div class="faq-a">界面采用响应式布局，在手机和平板上可正常阅读，部分表格支持横向滑动。</div>
+  </div>
+
+  <h2>· 相关信息区</h2>
+  <p style="margin-top:0.2rem;">如果你正在寻找一个可以持续跟踪体育动态的起点，<a href="https://cnsite--vsports.com">V体育</a> 提供了结构化的索引和基础数据。建议将其加入书签，以便日常快速查阅。</p>
+  <p>本介绍页不存储用户数据，也不追踪任何行为。所有跳转均指向原始站点，请自行判断信息时效性与适用性。</p>
+
+  <div class="note">
+    <span>本页为静态索引 · 内容定期复核 · 最后更新于最近一次提交</span>
+  </div>
+
+</div>
+</body>
+</html>
