@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK体育 知识库 · 再次访问与收藏指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #f5f3f0;
+      color: #2a2a2e;
+      line-height: 1.7;
+    }
+
+    .hero {
+      background: #14161c;
+      color: #e4ded7;
+      padding: 4rem 2rem 5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, #a6794b, #d3a56a, #a6794b);
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: #ede6dc;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #b3a99a;
+      max-width: 540px;
+      margin: 0 auto;
+      font-weight: 300;
+    }
+
+    .hero .underline-mild {
+      display: inline-block;
+      border-bottom: 1px solid #7a6b5a;
+      padding-bottom: 2px;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .tagline {
+      font-size: 1.8rem;
+      font-weight: 350;
+      color: #333;
+      margin-bottom: 1.8rem;
+      border-left: 4px solid #a6794b;
+      padding-left: 1.2rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem 2rem;
+      margin: 2.5rem 0 2.8rem;
+    }
+
+    .card {
+      background: #ffffffdd;
+      backdrop-filter: blur(1px);
+      background: #fff;
+      border-radius: 16px;
+      padding: 1.8rem 1.8rem 2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.03);
+      border: 1px solid #eae5de;
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      font-weight: 450;
+      color: #2c241e;
+      margin-bottom: 0.8rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px dashed #d6cec4;
+    }
+
+    .card p {
+      font-size: 0.98rem;
+      color: #3e3a34;
+      margin-bottom: 0.2rem;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.6rem 0 0;
+    }
+
+    .card ul li {
+      position: relative;
+      padding: 0.25rem 0 0.25rem 1.4rem;
+      font-size: 0.96rem;
+      color: #3d352e;
+    }
+
+    .card ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #a6794b;
+      font-weight: 300;
+    }
+
+    .highlight-link {
+      color: #9e6f3e;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px solid transparent;
+      transition: border 0.15s, color 0.15s;
+    }
+
+    .highlight-link:hover {
+      border-bottom: 1px solid #9e6f3e;
+      color: #7f562b;
+    }
+
+    .notice-box {
+      background: #f0ebe4;
+      border-radius: 16px;
+      padding: 1.8rem 2rem;
+      margin: 2.2rem 0 2rem;
+      border-left: 6px solid #a6794b;
+    }
+
+    .notice-box strong {
+      color: #1f1b16;
+    }
+
+    .faq-slim {
+      margin-top: 2.8rem;
+      padding-top: 1.8rem;
+      border-top: 1px solid #ddd6cc;
+    }
+
+    .faq-slim h4 {
+      font-weight: 450;
+      font-size: 1.2rem;
+      margin-bottom: 1.2rem;
+      color: #2f2822;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+
+    .faq-item .q {
+      font-weight: 500;
+      color: #3f362e;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-item .a {
+      color: #59524a;
+      font-size: 0.96rem;
+      margin-left: 0.8rem;
+    }
+
+    .return-note {
+      background: #e4ddd4;
+      padding: 1rem 1.8rem;
+      border-radius: 40px;
+      display: inline-block;
+      font-size: 0.92rem;
+      color: #2b251f;
+      margin: 1rem 0 0.6rem;
+    }
+
+    footer {
+      background: #1f1d1a;
+      color: #a69a8b;
+      text-align: center;
+      padding: 2.8rem 1.5rem 2.2rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #c9b69f;
+      text-decoration: none;
+      border-bottom: 1px solid #4d4238;
+    }
+
+    footer a:hover {
+      color: #e0d0ba;
+      border-bottom-color: #b09778;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .info-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .container {
+        padding: 2rem 1.2rem 3rem;
+      }
+      .tagline {
+        font-size: 1.45rem;
+      }
+      .notice-box {
+        padding: 1.4rem 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <h1>MK体育 · 知识库</h1>
+    <div class="sub">
+      再次访问 · 持续关注 · 收藏这片角落
+    </div>
+    <div style="margin-top: 1.5rem; font-size: 0.9rem; color: #857a6b;">
+      <span class="underline-mild">并非每次回访都相同</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="tagline">
+      把这里当作一个安静的起点
+    </div>
+
+    <p style="margin-bottom: 1.4rem; font-size: 1.02rem;">
+      如果你曾经访问过 <a href="https://chinam-mk.com" class="highlight-link">MK体育</a>，大概知道这里不抢眼、不喧哗。<br>
+      页面一直保持着自己的节奏——内容在更新，但底色没变。这篇文章算不上指南，更像一份手写的索引，帮你重新熟悉这片区域。
+    </p>
+
+    <div class="info-grid">
+
+      <div class="card">
+        <h3>📖 再次访问的意义</h3>
+        <p>第二次点开同一个地址，往往不是为了重复，而是为了确认。也许你收藏了链接，或者只是模糊记得。不管哪一种，回访本身就是一种信任。</p>
+        <ul>
+          <li>上次读过的内容可能已经补充了细节</li>
+          <li>信息架构保持连贯，不需要重新适应</li>
+          <li>适合慢慢浏览，不催促你做任何决定</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>🔖 收藏与持续关注</h3>
+        <p>把页面加入书签，或者记在笔记里，都不错。持续关注不等于每天刷新，而是知道有一个地方，值得偶尔回来看看。</p>
+        <ul>
+          <li>书签命名建议：直接使用“MK体育·知识节点”</li>
+          <li>内容风格稳定，没有突然的营销转向</li>
+          <li>适合作为信息源之一，但不唯一</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="notice-box">
+      <strong>提示</strong> · 本页属于知识库入口式布局，不追求流量，不设弹窗。如果你是通过地址栏直接输入、或者点开收藏夹进来的，这里的样子应该和你最初见到时差别不大——除了某些角落会有新的文字。
+    </div>
+
+    <div style="background: #f8f4ef; border-radius: 20px; padding: 1.5rem 1.8rem; margin-top: 1.5rem;">
+      <p style="font-size: 1rem; color: #36302a;">
+        📌 如果你愿意，可以把 <a href="https://chinam-mk.com" class="highlight-link">MK体育</a> 看作一个安静的固定锚点。<br>
+        不需要每次都有明确的理由才回来——有时候只是路过，停留一页，也足够。
+      </p>
+    </div>
+
+    <div class="faq-slim">
+      <h4>❔ 一些可能的疑问</h4>
+
+      <div class="faq-item">
+        <span class="q">Q: 这个页面会经常变化吗？</span>
+        <div class="a">结构大致稳定，但段落、措辞、卡片内容会随每次生成而微调。保持新鲜但不突兀。</div>
+      </div>
+
+      <div class="faq-item">
+        <span class="q">Q: 为什么强调“再次访问”？</span>
+        <div class="a">因为很多页面只为第一次访问者设计。我们更倾向于照顾那些愿意回来的人——哪怕只是一次。</div>
+      </div>
+
+      <div class="faq-item">
+        <span class="q">Q: 需要注册或登录才能使用吗？</span>
+        <div class="a">不需要。网站本身没有设置任何账户系统，访问即阅读，简单直接。</div>
+      </div>
+    </div>
+
+    <div style="text-align: right; margin-top: 2.5rem; font-size: 0.92rem; color: #70675d;">
+      —— 目录感布局 · 无干扰阅读
+    </div>
+  </main>
+
+  <footer>
+    <p style="margin-bottom: 0.6rem;">
+      知识库入口 · <a href="https://chinam-mk.com">MK体育</a> · 回访即是交流
+    </p>
+    <p style="font-size: 0.84rem; opacity: 0.7;">
+      页面的节奏由内容决定，不依赖模式化模板。
+    </p>
+  </footer>
+
+</body>
+</html>
